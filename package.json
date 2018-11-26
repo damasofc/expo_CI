@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint src/**/*.js src/**/*.mjs"
+    "lint": "./node_modules/.bin/eslint . ./**/*.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.9.0"
+  }
 }
